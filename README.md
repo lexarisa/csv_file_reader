@@ -2,14 +2,6 @@
 
 #### Installation
 
-Set up
-Create a Firebase app for authentication and image storage
-Create an empty PostgreSQL database as well as an empty test database (e.g. Curbside and Curbside_TEST)
-Installation
-Fork and clone the repo
-Add the three .env files in client/ and server/ folders (see examples below)
-Install requirements with npm install from project root folder, /server and /client folders
-Generate Prisma artifacts and sync database schema with prisma client with npx prisma generate and npx prisma db push from /server folder.
 
 - Clone the repo
 
@@ -17,6 +9,10 @@ Generate Prisma artifacts and sync database schema with prisma client with npx p
 git clone https://github.com/lexarisa/csv_file_reader.git
 
 ```
+
+- Install requirements with npm install from project root folder, /server and /client folders
+- Add the three .env files in client/ and server/ folders (see examples below)
+- Generate Prisma artifacts and sync database schema with prisma client with ``` npx prisma generate ``` and ``` npx prisma db push ``` from /server folder.
 
 #### Front-End 
 
