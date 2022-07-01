@@ -8,13 +8,11 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-
     getSongs().then((data) => {
       setSongs(data);
+      setLoading(false);
     });
-    setLoading(false);
-  }, [loading]);
+  }, []);
 
   if (loading) {
     return <Spinner />;

@@ -1,10 +1,12 @@
 import express, { Application } from 'express';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import songRouter from './routes/routes.song';
+import dotenv from 'dotenv';
+import path from 'path';
 
 const app: Application = express();
-const PORT = 3002 || process.env.PORT;
+dotenv.config({ path: path.join(__dirname, '.env') });
+const PORT = process.env.PORT || 3002;
 
 app.use(cors());
 app.use(express.json());
