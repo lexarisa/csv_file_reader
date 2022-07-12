@@ -25,8 +25,8 @@ npx prisma db seed
 
 - Creat your .env file in the server directory
 ```
-DATABASE_URL="postgres://yarprxpmpagnjb:e8d55126e008a583bde24719878170b36ef2f44e461c06437870d515d61c0379@ec2-23-23-182-238.compute-1.amazonaws.com:5432/dd4gipcrqf76ob"
-SHADOW_DATABASE_URL="postgres://xxtkmmlheqshpv:0922e393f941586e0c1e43fcb54b3bdefb539813fc8edaddc7b4ddc33e6c58cd@ec2-23-23-182-238.compute-1.amazonaws.com:5432/d70515i1nf16tg"
+DATABASE_URL=YOUR_DATABASE_URL
+SHADOW_DATABASE_URL=YOUR_SHADOWDATABASE_URL
 PORT=YOUR_PORT
 ```
 
